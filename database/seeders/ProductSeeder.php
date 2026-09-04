@@ -238,7 +238,7 @@ Piyuu memadukan tekstur pie yang renyah dengan brownies ubi ungu yang lembut, me
         */
 
         $Sampolin = Product::create([
-            'name' => 'Sampolin',
+            'name' => 'Sempolin',
 
             'description' => 'Sempol Ikan Tongkol merupakan inovasi sempol berbahan dasar
 ikan tongkol dengan tambahan bayam dan wortel pada adonan, sehingga lebih kaya
