@@ -22,7 +22,7 @@ class ProductSeeder extends Seeder
 
             'seller_name' => 'Kelompok 2A',
 
-            'whatsapp' => '6283160782824',
+            'whatsapp' => '6283160872824',
         ]);
 
         $saLut->images()->createMany([
