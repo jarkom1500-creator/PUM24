@@ -259,6 +259,14 @@ dengan dua pilihan rasa, yaitu pedas dan original sehingga dapat disesuaikan den
                 'image' => 'products/sempolin-2.jpg',
                 'sort_order' => 2,
             ],
+            [
+                'image' => 'products/sempolin-3.jpg',
+                'sort_order' => 3,
+            ],
+            [
+                'image' => 'products/sempolin-4.jpg',
+                'sort_order' => 4,
+            ],
         ]);
 
         $Sampolin ->variants()->createMany([
