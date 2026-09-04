@@ -49,7 +49,7 @@
                             onclick="filterCatalog('makanan', this)"
                             class="filter-tab px-space-md py-2 rounded-full font-label-md text-label-md transition-all duration-200 text-on-surface-variant hover:text-on-surface hover:bg-surface-container flex items-center gap-1.5">
                         <span class="material-symbols-outlined text-[18px]">restaurant</span>
-                        <span>Makanan &amp; Minuman</span>
+                        <span>Makanan</span>
                         <span class="ml-1 px-1.5 py-0.5 text-[11px] rounded-full bg-surface-container-highest text-on-surface-variant">{{ $makananCount }}</span>
                     </button>
 

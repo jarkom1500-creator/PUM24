@@ -87,6 +87,15 @@ class ProductSeeder extends Seeder
                 'image' => 'products/samocass-3.png',
                 'sort_order' => 3,
             ],
+            [
+                'image' => 'products/samocass-4.png',
+                'sort_order' => 4,
+            ],
+            [
+                'image' => 'products/samocass-5.png',
+                'sort_order' => 5,
+            ],
+            
         ]);
 
         $samocass->variants()->createMany([
@@ -107,10 +116,9 @@ class ProductSeeder extends Seeder
             ],
             [
                 'variant_name' => 'Porsi',
-                'net_weight' => null,
+                'net_weight' => '4pcs/porsi',
                 'price' => 13000,
-            ],
-            
+            ]
         ]);
                /*
         |--------------------------------------------------------------------------
@@ -219,7 +227,7 @@ Piyuu memadukan tekstur pie yang renyah dengan brownies ubi ungu yang lembut, me
         $Nakoju ->variants()->createMany([
             [
                 'variant_name' => 'Cocolan Coklat',
-                'net_weight' => '138 gram/pcs',
+                'net_weight' => '138 gram/ 6 pcs',
                 'price' => 10000,
             ],
         ]);
@@ -414,6 +422,10 @@ dengan dua pilihan rasa, yaitu pedas dan original sehingga dapat disesuaikan den
             'seller_name' => 'Kelompok 4B',
 
             'whatsapp' => '6282130916370',
+
+            'category' => 'kerajinan',
+
+            'category_icon' => 'Palette',
         ]);
 
         $pineva->images()->createMany([

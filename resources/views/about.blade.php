@@ -66,10 +66,13 @@
                     </h2>
                     
                     <p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
-                    PUM (Proyek Usaha Mandiri) merupakan salah satu bentuk kegiatan pembelajaran dalam Mata Kuliah Bisnis Digital yang dilaksanakan oleh mahasiswa TPTP angkatan 2024. Kegiatan ini menjadi wadah bagi mahasiswa untuk menerapkan pengetahuan dan keterampilan yang diperoleh selama perkuliahan ke dalam praktik nyata, khususnya dalam mengembangkan ide usaha, mengelola produk, serta memperkenalkan dan memasarkan produk kepada masyarakat.    
+                        PUM (Proyek Usaha Mandiri) merupakan salah satu kegiatan yang dilaksanakan oleh mahasiswa Program Studi Agroindustri angkatan 2024 sebagai wadah untuk menerapkan pengetahuan, keterampilan, dan kreativitas yang telah diperoleh selama perkuliahan ke dalam kegiatan usaha secara langsung. Melalui kegiatan PUM, mahasiswa mendapatkan kesempatan untuk mengembangkan ide usaha, mengelola produk, serta memperkenalkan dan memasarkan produk kepada masyarakat.
                     </p>
-                    <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
-                       Melalui PUM, mahasiswa angkatan 2024 TPTP tidak hanya belajar mengenai konsep bisnis secara teori, tetapi juga memperoleh pengalaman dalam menjalankan proses kewirausahaan secara langsung. Produk yang ditampilkan dalam katalog ini merupakan hasil usaha mahasiswa, baik berupa produk makanan maupun kerajinan tangan. Website ini dibuat sebagai media digital untuk memperkenalkan produk-produk tersebut sehingga dapat lebih mudah dikenal dan diakses oleh calon konsumen. 
+                    <p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+                        Melalui PUM, mahasiswa tidak hanya memperoleh pemahaman mengenai konsep kewirausahaan, tetapi juga mendapatkan pengalaman nyata dalam menjalankan proses usaha, mulai dari pengembangan produk hingga pemasaran. Produk yang ditampilkan dalam katalog ini merupakan hasil usaha mahasiswa, baik berupa produk makanan maupun kerajinan tangan.
+                    </p>
+                    <p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+                        Website ini dibuat sebagai media digital untuk memperkenalkan berbagai produk hasil PUM, sehingga produk mahasiswa dapat lebih mudah dikenal dan diakses oleh masyarakat maupun calon konsumen. Kehadiran katalog digital ini diharapkan dapat membantu mahasiswa dalam memperluas jangkauan pemasaran sekaligus meningkatkan daya tarik dan potensi penjualan produk.    
                     </p>
                     
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md pt-space-xs w-full mt-space-sm">

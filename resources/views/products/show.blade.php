@@ -38,6 +38,7 @@
                             $imgSrc = $firstImage ? (filter_var($firstImage, FILTER_VALIDATE_URL) ? $firstImage : asset($firstImage)) : 'https://placehold.co/600x400?text=No+Image';
                         @endphp
                         <img 
+                             id="main-product-image"
                              src="{{ $imgSrc }}"
                              alt="{{ $product->name }}"
                              class="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-105" />
@@ -59,13 +60,46 @@
                 {{-- Thumbnails Grid --}}
                 @if($product->images->count() > 1)
                 <div class="grid grid-cols-4 gap-space-sm mt-space-2xs">
-                    @foreach($product->images as $img)
-                    <div class="aspect-[4/3] rounded-lg overflow-hidden border border-outline-variant hover:border-primary cursor-pointer transition-colors bg-surface-container">
-                        <img src="{{ filter_var($img->image, FILTER_VALIDATE_URL) ? $img->image : asset($img->image) }}" 
-                             alt="{{ $product->name }}" class="w-full h-full object-cover" />
+                    @foreach($product->images as $loop_index => $img)
+                    @php $thumbSrc = filter_var($img->image, FILTER_VALIDATE_URL) ? $img->image : asset($img->image); @endphp
+                    <div class="aspect-[4/3] rounded-lg overflow-hidden border-2 cursor-pointer transition-all bg-surface-container thumbnail-item {{ $loop_index === 0 ? 'border-primary' : 'border-outline-variant hover:border-primary/60' }}"
+                         onclick="switchImage(this, '{{ $thumbSrc }}')">
+                        <img src="{{ $thumbSrc }}" 
+                             alt="{{ $product->name }}" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
                     </div>
                     @endforeach
                 </div>
+
+                <script>
+                    function switchImage(thumbnail, src) {
+                        const mainImg = document.getElementById('main-product-image');
+
+                        // Fade out
+                        mainImg.style.opacity = '0';
+                        mainImg.style.transform = 'scale(0.97)';
+
+                        setTimeout(() => {
+                            mainImg.src = src;
+                            // Fade in
+                            mainImg.style.opacity = '1';
+                            mainImg.style.transform = 'scale(1)';
+                        }, 150);
+
+                        // Update active border on thumbnails
+                        document.querySelectorAll('.thumbnail-item').forEach(el => {
+                            el.classList.remove('border-primary');
+                            el.classList.add('border-outline-variant');
+                        });
+                        thumbnail.classList.remove('border-outline-variant');
+                        thumbnail.classList.add('border-primary');
+                    }
+
+                    // Setup smooth transition on main image
+                    document.addEventListener('DOMContentLoaded', () => {
+                        const mainImg = document.getElementById('main-product-image');
+                        mainImg.style.transition = 'opacity 0.15s ease, transform 0.15s ease';
+                    });
+                </script>
                 @endif
 
                 {{-- Trust Badges --}}

@@ -293,7 +293,7 @@
                 </p>
                 <div class="inline-flex items-center gap-space-2xs font-label-sm text-label-sm text-primary-container">
                     <span class="material-symbols-outlined text-[16px]"></span>
-                    <span>by Ufutt</span>
+                    <span>by @Ufutt</span>
                 </div>
             </div>
 
